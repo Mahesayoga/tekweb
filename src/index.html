@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/input.css">
+  <link rel="stylesheet" href="/src/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body class=" h-screen w-full">
+  <!-- Navbar -->
+  <nav class="bg-white fixed w-full top-0 left-0 py-5 px-0 bg-opacity-30 backdrop-blur-[10px] z-[1000]">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="../Assets/Logo.png" alt="Logo" class="h-10 w-10 mr-0" />
+        <span class="text-2xl font-bold">Remind</span>
+        <span class="text-blue-600 text-2xl font-bold">Me</span>
+      </div>
+
+      <!-- Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-blue-600 font-bold hover:text-gray-200"
+          >Home</a
+        >
+        <a href="#features" class="text-black hover:text-gray-200"
+          >Features</a
+        >
+        <a href="#about" class="text-black hover:text-gray-200">About Us</a>
+      </div>
+
+      <!-- Button -->
+      <div class="hidden md:block">
+        <a
+          href="#about-app"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200"
+          >About App</a
+        >
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="text-blue-600 md:hidden">
+        <img src="../Assets/radix-icons_hamburger-menu.png" alt="" class="">
+        
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden space-y-2 mt-2 p-4 bg-blue-500"
+    >
+      <a href="#home" class="block text-white hover:text-gray-200">Home</a>
+      <a href="#features" class="block text-white hover:text-gray-200"
+        >Features</a
+      >
+      <a href="#about" class="block text-white hover:text-gray-200"
+        >About Us</a
+      >
+      <a
+        href="#about-app"
+        class="block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded"
+        >About App</a
+      >
+    </div>
+  </nav>
+
+  <!-- Section Hero -->
+  <section class="flex flex-col md:flex-row items-center justify-center p-5 min-h-screen py-10 bg-gray-100 pt-20">
+    <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+      <h1 class="text-5xl font-bold text-left mb-5 p-3 bg-gray-100 break-words">
+        Manage Schedule and Task Easy
+      </h1>
+      <p class="text-gray-600 mb-6 text-left break-words">
+        Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task.
+      </p>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded-full float-left">
+        Download App
+      </button>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <div class="relative w-full">
+        <img src="../Assets/Hero Image.png" alt="Hero Image" class="w-full h-auto object-cover">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Features -->
+  <section class="py-12 bg-white-100">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+          <div class="text-center">
+            <div class="mb-4">
+              <img src="../Assets/uim_schedule.png" alt="" class="w-12 h-12 mx-auto text-blue-500">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              Set a better deadline tasks
+            </h3>
+            <p class="text-gray-600">
+              You can make your duty deadlines better and more orderly
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+          <div class="text-center">
+            <div class="mb-4">
+              <img src="../Assets/uim_layer-group.png" alt="" class="w-12 h-12 mx-auto text-blue-500">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              Manage the tasks so easily
+            </h3>
+            <p class="text-gray-600">
+              You can manage the deadlines and the schedule becomes easy
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4">
+          <div class="text-center">
+            <div class="mb-4">
+              <img src="../Assets/ri_notification-fill.png" alt="" class="w-12 h-12 mx-auto text-blue-500">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              Wouldn’t miss notifications
+            </h3>
+            <p class="text-gray-600">
+              Of course you will always get the tasks and schedule
+              notifications
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Advantages 1 -->
+  <section class="flex flex-col md:flex-row items-center justify-center p-8 bg-gray-100">
+    <!-- Bagian Kiri: Gambar -->
+    <div class="md:w-1/2 pl-0 pr-4">
+      <img src="../Assets/Image 1.png" alt="Task Management UI" class="w-full h-auto rounded-lg" />
+    </div>
+  
+    <!-- Bagian Kanan: Teks -->
+    <div class="md:w-1/2 pr-0 pl-4">
+      <h1 class="text-3xl font-bold mb-4 break-words">
+        Set up task and schedule with the best features
+      </h1>
+      <p class="text-gray-600 mb-4 break-words">
+        The best feature makes you better, with the latest technology to meet your needs. With features such as organizing schedules and tracking assignments, everything becomes easier. Get the application now!
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section Advantages 2 -->
+  <section class="flex flex-col md:flex-row items-center justify-center p-8 bg-white-100 rounded-lg shadow-lg">
+    <!-- Left Side: Text -->
+    <div class="md:w-1/2 p-4 order-last md:order-first">
+      <h1 class="text-3xl font-bold mb-4">Get the highest priority application notification</h1>
+      <p class="text-gray-600 mb-4">
+        With advanced notification features, you'll stay on top of your tasks and schedules effortlessly. Try the application today for better management.
+      </p>
+    </div>
+    <!-- Right Side: Image -->
+    <div class="md:w-1/2 p-4">
+      <img src="../Assets/Image.png" alt="App Interface" class="w-full h-auto rounded-lg" />
+    </div>
+  </section>
+
+  <!-- Section User Paging -->
+  <section class="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+    <div class="relative text-center w-full overflow-hidden">
+      <!-- Image with margins on the left and right -->
+      <img src="../Assets/Rectangle 11.png" alt="" class="w-full max-w-screen rounded-lg">
+  
+      <!-- Overlay Text and Buttons -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-20">
+        <h2 class="text-white text-lg md:text-xl font-semibold mb-4 bg-opacity-75 text-center">
+          Download an app now and the various benefits you will get immediately
+        </h2>
+        <div class="flex flex-col sm:flex-row justify-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0">
+          <button class="bg-white text-blue-600 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-gray-100 w-full sm:w-auto">
+            Download App
+          </button>
+          <button class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-blue-700 w-full sm:w-auto">
+            About App
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Testimonial -->
+  <section class="flex flex-col md:flex-row items-center justify-center p-8 bg-white-100 rounded-lg shadow-lg">
+    <div class="flex-1 flex items-center justify-start md:justify-center">
+      <img src="../Assets/Testimonial.png" alt="" class="w-full max-w-xs md:max-w-full h-auto" />
+    </div>
+    <div class="flex-1 p-4">
+      <h2 class="text-2xl font-bold mb-4">What do they think</h2>
+      <div class="flex items-center mb-4">
+        <img src="../Assets/Profile.png" alt="Profile Picture" class="w-10 h-10 rounded-full mr-4" />
+        <div>
+          <h3 class="text-lg font-semibold">Samantha Sench</h3>
+          <p class="text-gray-500">Student at University</p>
+        </div>
+      </div>
+      <p class="text-gray-700">
+        "Hi, it's Samantha. After using it made me a lot of benefits, starting
+        with convenience of setting a deadline of tasks and schedule after
+        that the app is very simple using."
+      </p>
+      <div class="flex space-x-2 mt-4">
+        <button>
+          <img src="../Assets/Vector (1).png" alt="" />
+        </button>
+        <button>
+          <img src="../Assets/la_arrow-right.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Section footer -->
+  <footer class="bg-white-100 py-8 justify-between">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Logo and Name -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="../Assets/Logo.png" alt="Logo" class="h-20 w-20 mr-4">
+            <span class="ml-3 text-xl font-bold text-gray-900">
+              Remind<span class="text-blue-500">me</span>
+            </span>
+          </div>
+          <p class="text-gray-600">
+            Task deadlines and scheduling applications with various benefits
+            and advantages.
+          </p>
+        </div>
+  
+        <!-- Sitemaps -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0  mt-8">
+          <h3 class="text-gray-900 font-semibold mb-3">Sitemaps</h3>
+          <ul class="text-gray-600">
+            <li class="mb-2">
+              <a href="#" class="hover:text-blue-500">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-blue-500">Features</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-blue-500">About Us</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Advantages -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 mt-8">
+          <h3 class="text-gray-900 font-semibold mb-3 ">Advantages</h3>
+          <ul class="text-gray-600">
+            <li class="mb-2">Set Task Better</li>
+            <li class="mb-2">Easy Manage</li>
+            <li class="mb-2">Get Notification</li>
+          </ul>
+        </div>
+  
+        <!-- Follow Us -->
+        <div class="w-full md:w-1/4 mt-8">
+          <h3 class="text-gray-900 font-semibold mb-3 ">Follow Us</h3>
+          <div class="flex space-x-4">
+            <img src="../Assets/uim_facebook-f.png" alt="Facebook" class="h-6">
+            <img src="../Assets/uim_twitter.png" alt="Twitter" class="h-6">
+            <img src="../Assets/uim_linkedin-alt.png" alt="LinkedIn" class="h-6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
